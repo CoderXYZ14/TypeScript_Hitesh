@@ -9,7 +9,7 @@
 // }
 
 class User {
-  private _courseCount = 1;
+  protected _courseCount = 1;
   private readonly city: string = "Lucknow";
   constructor(public email: string, public name: string) {} //better syntax
 
@@ -31,6 +31,13 @@ class User {
     if (courseNum <= 1)
       throw new Error("Course count should be greater than 1");
     this._courseCount = courseNum;
+  }
+}
+
+class SubUser extends User {
+  isFamily: boolean = true;
+  changeCourseCount() {
+    this._courseCount = 4;
   }
 }
 
