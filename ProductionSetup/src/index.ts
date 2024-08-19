@@ -41,4 +41,4 @@ class SubUser extends User {
   }
 }
 
-const shahwaiz = new User("s@s.com", "shahwaiz");
+const shahwaiz = new SubUser("s@s.com", "shahwaiz");
