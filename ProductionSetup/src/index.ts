@@ -8,7 +8,7 @@
 //   }
 // }
 
-class User {
+class User5 {
   protected _courseCount = 1;
   private readonly city: string = "Lucknow";
   constructor(public email: string, public name: string) {} //better syntax
@@ -34,7 +34,7 @@ class User {
   }
 }
 
-class SubUser extends User {
+class SubUser extends User5 {
   isFamily: boolean = true;
   changeCourseCount() {
     this._courseCount = 4;
